@@ -1,16 +1,112 @@
 @import "_normalize";
 @import "_variables";
-
+@import "modules/gallery.scss";
+@import "modules/contact.scss";
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+	font-family: "Neue helvetica", helvetica, sans-serif;
+	font-weight: 100;
+	text-align: center;
+	background-color: $beige;
+	color: $dark;
+	overflow: hidden;
+	line-height: 1.4em;
+
+	@media (max-width: $mobile) {
+		overflow: auto;
+	}
+}
+
+.back-text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 17px;
+	font-weight: 100;
+	letter-spacing: 0.14em;
+	opacity: 0;
+	z-index: 2;
+	transition: opacity 0.1s linear;
+
+	@media (max-width: $mobile) {
+		opacity: 0;
+	}
+}
+
+.header {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	font-weight: 100;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	transition: 0.5s;
+	z-index: 0;
+	cursor: pointer;
+
+	@media (max-width: $mobile) {
+		font-size: 20px;
+		position: static;
+		left: auto;
+		top: auto;
+		transform: translate(0, 0);
+		opacity: 1;
+		margin: 50px 0 10px;
+	}
+}
+
+.enter {
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	transform: translateX(-50%);
+	font-size: 18px;
+	font-weight: 100;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	transition: opacity 0.3s;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	z-index: 2;
+	&:hover {
+		border-bottom: 1px solid $dark;
+	}
+
+	@media (max-width: $mobile) {
+		font-size: 14px;
+		position: static;
+		left: auto;
+		bottom: auto;
+		transform: translate(0, 0);
+		opacity: 1;
+		margin-bottom: 30px;
+		opacity: 0;
+	}
+}
+
+.sketch {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	&__canvas {
+		height: 100%;
+		width: 100%;
+	}
+
+	@media (max-width: $mobile) {
+		display: none;
+	}
 }
