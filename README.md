@@ -10,7 +10,7 @@ My personal commercial portfolio website 🔥.
 - CANVAS
   ...
 
-# built with gulp
+# Built with gulp
 
 `npm install -g gulp-cli`
 
@@ -19,6 +19,8 @@ My personal commercial portfolio website 🔥.
 `gulp`
 
 To publish your page using github pages use `npm run deploy`
+
+##
 
 Online version: https://patrycjapetryk.github.io/monika/
 
