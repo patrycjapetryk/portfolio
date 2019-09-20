@@ -1,4 +1,4 @@
-# Patrycja Petryk Personal Portfolio Website
+# Patrycja Petryk Portfolio Website
 
 My personal commercial portfolio website 🔥.
 
@@ -22,5 +22,5 @@ To publish your page using github pages use `npm run deploy`
 
 ##
 
-Online version: https://patrycjapetryk.github.io/monika/
+Online version: https://patrycjapetryk.github.io/portfolio/
 
