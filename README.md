@@ -1,4 +1,16 @@
-# wtf-gulp-starter
+# Patrycja Petryk Personal Portfolio Website
+
+My personal commercial portfolio website 🔥.
+
+## Tools & technologies I've used
+
+- Visual Studio Code
+- SASS
+- JS ES6
+- CANVAS
+  ...
+
+# built with gulp
 
 `npm install -g gulp-cli`
 
@@ -7,3 +19,4 @@
 `gulp`
 
 To publish your page using github pages use `npm run deploy`
+
