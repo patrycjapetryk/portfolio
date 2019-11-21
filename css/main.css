@@ -522,6 +522,7 @@ template {
         font-size: 12px; } }
   .contact__link {
     color: #000000;
+    display: block;
     text-decoration: none; }
 
 html {
@@ -566,12 +567,13 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 80px;
+  -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  font-size: 62px;
   font-weight: 100;
   letter-spacing: 0.15em;
+  line-height: 78px;
   text-transform: uppercase;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
